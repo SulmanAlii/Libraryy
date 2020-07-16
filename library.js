@@ -15,7 +15,6 @@ list.addEventListener('click', function (b) {
     }
 });
 
-
 //ADDING BOOKS TO LIST
 const addBook = document.forms['form2'];
 
@@ -64,9 +63,6 @@ search.addEventListener('keyup', function (s) {
             book.style.display = 'block';
         } else
             book.style.display = 'none';
-
-
-
     })
 
 })
@@ -74,22 +70,18 @@ search.addEventListener('keyup', function (s) {
 var loginn = document.getElementById('modal-loginUp');
 var signup = document.getElementById('modal-signUp');
 
-
 function signUp() {
     if (signup.style.display == "none") {
         signup.style.display = "block";
     } else
         signup.style.display = "none";
-
 }
-
 
 function login() {
     signup.style.display = "none";
     
     if(loginn.style.display == "none"){
        loginn.style.display = "block";
-
     } else
         loginn.style.display = "none";
 }
