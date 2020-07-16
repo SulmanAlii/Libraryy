@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.js">-->
+    <link rel = "icon" href = "Images/IconLibrary.png" type = "image/x-icon"> 
+    <title>EasyLibrary</title>
+</head>
+<body>
+    
+    <div class="title">
+        <div class="login">
+            <a href="#" data-target="modal-loginUp" id="loginTitle" onclick="login()">Login</a>
+        </div>
+        <div class="Signup">
+            <a href="#" data-target="modal-signUp" id="SignUpTitle" onclick="signUp()">Sign Up</a>
+        </div>
+        <h1>EasyLibrary</h1>
+        <form action="search" class="form" id="searchBar">
+            <input type="text" placeholder="Search a Book...">
+        </form>
+    </div>
+
+  
+    <div class="libraryItems" id="libraryit">   
+        <div class="MiddelDivTitle">
+            <h1>Books</h1>
+        </div>
+        <hr class="hr">
+        <ul class="items" id="itemsID">
+            <li>
+                <span class="BookTitle">Love Story</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="BookTitle">Creatividad y comunicación persuasiva</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="BookTitle">Mafia y crimen organizado: Todo lo que interesa saber</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="BookTitle">Socrates</span>
+                <span class="delete">delete</span>
+            </li>
+        </ul>
+    </div>
+
+    <form class="form" id="form2">
+        <input type="text" placeholder="Add a book">
+        <button>ADD</button>
+    </form>
+
+ 
+
+    <div class="modal" id="modal-signUp">
+        <div class="modal-content">
+           <h4 id="buttonSign">Sign up</h4> <br />
+            <form id="signup-form">
+                <div class="input-field">
+                    <label for="signup-email">Email address</label>
+                    <input type="email" id="signup-email" required>   
+                </div>
+                <div class="input-field">
+                    <label for="signup-password">Choose password</label>
+                    <input type="password" id="signup-password" required>  
+                </div>
+                <div class="signBottom">
+                    <button id="buttonSign">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!--Login modal-->
+
+    <div class="modal" id="modal-loginUp">
+        <div class="modal-content">
+            <h4>Login</h4><br />
+            <form id="login-form">
+                <div class="input-field">
+                    <label for="login-email">Email address</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="input-field">
+                    <label for="login-password">Choose password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="signBottom">
+                    <button id="buttonSign">Login</button>
+                </div>
+              
+            </form>
+        </div>
+    </div>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+<script src="library.js" type="text/javascript"></script>
+<script src="/scripts/index.js"></script>  
+</body>
+</html>
